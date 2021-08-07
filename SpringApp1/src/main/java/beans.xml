@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ <!--  <bean id="empBean" class="com.lti.pojo.Employee">
+ <property name="message" value="Welcome to LTI"/>
+ </bean>
+ <bean id="deptBean" class="com.lti.pojo.Department">
+ <property name="deptname" value="Education"/>
+ <property name="location" value="India"/>
+ </bean>
+ <bean id="empBean1" class="com.lti.pojo.Employee1">
+ <property name="empno" value="101"/>
+ <property name="name" value="Max"/>
+ <property name="address" ref="empAddress"/>
+ </bean>
+ <bean id="empAddress" class="com.lti.pojo.Address">
+ <property name="city" value="Mumbai"/>
+ <property name="state" value="Maharashtra"/>
+ </bean> -->
+ <!--  <bean id="empBean1" class="com.lti.pojo.Employee1" scope="prototype"> for scope prototype it will make separate object so it will give different output for diff. value entered
+ </bean> -->
+ <bean id="empBean1" class="com.lti.pojo.Employee1" scope="singleton"> <!--  for singleton it will create only single object so final output will contain the value which is entered at last-->
+ </bean>
+ 
+ 
+ 
+ 
+</beans>
